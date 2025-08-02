@@ -1,0 +1,62 @@
+/* Slider BTN area css
+============================================================================================ */
+.s_btn {
+    color: #fff !important;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 170px;
+    text-align: center;
+    background: transparent;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px; 
+    color: #fff;
+    width: 100%;
+    font-size: 13px;
+    font-family: $mon; 
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    @include transition;
+    padding: 0px;
+}
+.s_btn {
+    display: inline-block;
+}
+.s_btn:hover {
+    text-decoration: none;
+}
+.s_btn {
+    font-weight: 100;
+}
+.s_btn svg {
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.s_btn rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
+}
+
+.s_btn:hover {
+    background: rgba(225, 51, 45, 0);
+    color: #fff;
+}
+.s_btn:hover rect {
+    stroke-width: 3;
+    stroke-dasharray: 20, 310;
+    stroke-dashoffset: 25;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* End Slider BTN area css
+============================================================================================ */

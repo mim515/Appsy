@@ -1,0 +1,329 @@
+/* Demo item area css
+============================================================================================ */
+.sec_title{
+    margin-top: 100px;
+    text-align: center;
+    padding: 70px 0px;;
+    h2{
+        font-family: $op;
+        font-size: 30px;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        span{
+            color: $baseColor;
+        }
+    }
+}
+.chose_demo_area{
+    overflow-x: hidden;
+    padding-top: 30px;
+}
+.chose_demo_inner{
+    position: relative;
+    z-index: 3;
+    padding: 50px;
+    margin-top: 100px;
+    &:before{
+        content: "";
+        background: $baseColor;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 50%;
+        z-index: -1;
+        height: 100%;
+    }
+    &:after{
+        content: "";
+        background: url(../img/dots.png) no-repeat center right;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        width: 50%;
+    }
+    &:first-child{
+        margin-top: 0px;
+    }
+    &:nth-child(2){
+        &:before{
+            content: "";
+            background: $red;
+            right: 0px;
+            position: absolute;
+            top: 0px;
+            width: 50%;
+            z-index: -1;
+            height: 100%;
+            left: auto;
+        }
+        &:after{
+            content: "";
+            background: url(../img/dots.png) no-repeat center left;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 50%;
+            z-index: -1;
+        }
+    }
+    &:nth-child(3){
+        &:before{
+            content: "";
+            background: $blue;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 50%;
+            z-index: -1;
+            height: 100%;
+        }
+        &:after{
+            content: "";
+            background: url(../img/dots.png) no-repeat center right;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            height: 100%;
+            width: 50%;
+            z-index: -1;
+        }
+    }
+    &:nth-child(4){
+        overflow: hidden;
+        &:before{
+            content: "";
+            background: #15e99d;
+            right: 0px;
+            position: absolute;
+            top: 0px;
+            width: 50%;
+            z-index: -1;
+            height: 100%;
+            left: auto;
+        }
+        &:after{
+            content: "";
+            background: url(../img/dots.png) no-repeat center left;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 50%;
+            z-index: -1;
+        }
+    }
+    &:nth-child(6){
+        overflow: hidden;
+        &:before{
+            content: "";
+            background: $red;
+            right: 0px;
+            position: absolute;
+            top: 0px;
+            width: 50%;
+            z-index: -1;
+            height: 100%;
+            left: auto;
+        }
+        &:after{
+            content: "";
+            background: url(../img/dots.png) no-repeat center left;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 50%;
+            z-index: -1;
+        }
+    }
+}
+.demo_item{
+    @include transition;
+    position: relative;
+    z-index: 3;
+    img{
+        max-width: 100%;
+        @include transition;
+        z-index: 3;
+    }
+    h2{
+        font-size: 20px;
+        font-family: $op;
+        text-align: center;
+        color: #000;
+        padding-top: 30px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.white_border{
+    li{
+        position: absolute;
+        &:first-child{
+            top: -56px;
+            left: 90px;
+        }
+        &:nth-child(2){
+            top: 0px;
+            left: 50px;
+        }
+        &:last-child{
+            top: 0px;
+            right: 90px;
+        }
+    }
+}
+.border_round{
+    position: relative;
+    li{
+        position: absolute;
+        &:first-child{
+            top: -56px;
+            left: 90px;
+        }
+        &:nth-child(2){
+            top: 150px;
+            right: 60px;
+        }
+        &:nth-child(3){
+            top: 150px;
+            right: 60px;
+        }
+        &:last-child{
+            top: 200px;
+            right: 480px;
+        }
+    }
+}
+/* End Demo item area css
+============================================================================================ */
+
+/* End Demo item area css
+============================================================================================ */
+.responsive_area{
+    position: relative;
+    height: 560px;
+    overflow: hidden;
+    z-index: 3;
+    margin-top: 100px;
+    &:before{
+        content: "";
+        background: rgba(0, 0, 0, .7);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+    .section-parallax{
+        li{
+            position: absolute;
+            &:first-child{
+                left: 50%;
+                transform: translateX(-50%);
+                top: 90px;
+            }
+            &:nth-child(2){
+                left: calc(50% - 240px);
+                transform: translateX(-50%);
+                top: 400px;
+            }
+            &:nth-child(3){
+                left: calc(50% - 100px);
+                transform: translateX(-50%);
+                top: 200px;
+            }
+            &:nth-child(4){
+                left: calc(50% + 200px);
+                transform: translateX(-50%);
+                top: 380px;
+            }
+            &:nth-child(5){
+                left: calc(50% + 20px);
+                transform: translateX(-50%);
+                top: 450px;
+            }
+            &:nth-child(6){
+                top: 50%;
+                right: 200px;
+            }
+            &:nth-child(7){
+                top: 50%;
+                right: 200px;
+            }
+        }
+    }
+    .responsive_text{
+        text-align: center;
+        color: #fff;
+        z-index: 4;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        left: 0px;
+        h3{
+            font-size: 40px;
+            font-family: $op;
+            font-weight: bold;
+            padding-bottom: 30px;
+        }
+        p{
+            max-width: 650px;
+            margin: auto;
+            font-size: 18px;
+            font-family: $op;
+            span{
+                color: $baseColor;
+                font-weight: bold;
+            }
+        }
+    }
+}
+/* End Demo item area css
+============================================================================================ */
+
+/* Appsy Feature area css
+============================================================================================ */
+.appsy_feature_area{
+    padding: 100px 0px;
+    .sec_title{
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+}
+.feature_inner{
+    margin-bottom: -50px;
+    overflow: hidden;
+}
+.feature_item{
+    text-align: center;
+    margin-bottom: 50px;
+    i{
+        font-size: 50px;
+        color: $baseColor;
+    }
+    h3{
+        color: $baseColor;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: $op;
+        padding: 20px 0px 14px 0px;
+    }
+    p{
+        font-size: 16px;
+        font-family: $op;
+    }
+}
+/* End Appsy Feature area css
+============================================================================================ */

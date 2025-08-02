@@ -1,0 +1,911 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Rocky Ahmed
+@URL: http://wethemez.com
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: SeoPailot
+@Author: Rocky Ahmed
+@Developed By: Rocky Ahmed
+@Developer URL: http://rocky.obaidul.com
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ predefin
+03/ header
+04/ slider
+05/ photography
+06/ button 
+07/ work 
+08/ team
+09/ contact 
+10/ price 
+11/ portfolio 
+12/ blog 
+13/ sidebar  
+13/ page-header  
+13/ project  
+13/ we-dope  
+13/ progress
+13/ comingsoon
+13/ error
+13/ footer
+=====================================================================*/
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700,800|Open+Sans:300,400,400i,600,600i,700,800");
+.col-md-offset-right-1 {
+  margin-right: 8.33333333%;
+}
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.row.m0 {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  line-height: 24px;
+  font-size: 14px;
+  overflow: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid-sizer {
+  width: calc(100% / 3);
+}
+
+.display_table {
+  display: table;
+  width: 100%;
+}
+
+.display_table_row {
+  display: table-row;
+}
+
+.display_table_cell {
+  display: table-cell;
+  float: none !important;
+}
+
+/* Main title css
+============================================================================================ */
+/* End Pagination css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Mneu area css
+============================================================================================ */
+.header_area {
+  background: #673ab7;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+}
+
+.header_area .main_menu {
+  float: none;
+  text-align: center;
+}
+
+.header_area .main_menu li {
+  float: none;
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.header_area .main_menu li a {
+  line-height: 50px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  position: relative;
+  padding: 0px 8px;
+  background: transparent;
+}
+
+.header_area .main_menu li:last-child {
+  margin-right: 0px;
+}
+
+/* End Mneu area css
+============================================================================================ */
+/* First Bg area css
+============================================================================================ */
+.firs_bg_area {
+  background: url(../img/header-bg.jpg) fixed no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.firs_bg_area .template-info .logo img {
+  margin-top: 100px;
+}
+
+.firs_bg_area .template-info .page-headline h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  padding: 30px 0px;
+}
+
+.firs_bg_area .template-info .page-headline h1 span {
+  color: #673ab7;
+}
+
+.firs_bg_area .template-info .page-headline p {
+  padding-bottom: 30px;
+}
+
+.firs_bg_area .screens {
+  position: absolute;
+  width: 100%;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.firs_bg_area .screens span {
+  display: inline-block;
+}
+
+.firs_bg_area .memphis-parallax li {
+  position: absolute;
+}
+
+.firs_bg_area .memphis-parallax li:nth-child(1) {
+  right: 200px;
+  bottom: 180px;
+}
+
+.firs_bg_area .memphis-parallax li:nth-child(1) img {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.firs_bg_area .memphis-parallax li:nth-child(2) {
+  right: 200px;
+  bottom: 180px;
+}
+
+.firs_bg_area .memphis-parallax li:nth-child(2) img {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.firs_bg_area .memphis-parallax li:nth-child(3) {
+  left: 200px;
+  bottom: 180px;
+}
+
+.firs_bg_area .memphis-parallax li:nth-child(3) img {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* End First Bg area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Slider BTN area css
+============================================================================================ */
+.s_btn {
+  color: #fff !important;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 170px;
+  text-align: center;
+  background: transparent;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  color: #fff;
+  width: 100%;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+  padding: 0px;
+}
+
+.s_btn {
+  display: inline-block;
+}
+
+.s_btn:hover {
+  text-decoration: none;
+}
+
+.s_btn {
+  font-weight: 100;
+}
+
+.s_btn svg {
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.s_btn rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-dasharray: 422, 0;
+}
+
+.s_btn:hover {
+  background: rgba(225, 51, 45, 0);
+  color: #fff;
+}
+
+.s_btn:hover rect {
+  stroke-width: 3;
+  stroke-dasharray: 20, 310;
+  stroke-dashoffset: 25;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* End Slider BTN area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Demo item area css
+============================================================================================ */
+.sec_title {
+  margin-top: 100px;
+  text-align: center;
+  padding: 70px 0px;
+}
+
+.sec_title h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+.sec_title h2 span {
+  color: #673ab7;
+}
+
+.chose_demo_area {
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+.chose_demo_inner {
+  position: relative;
+  z-index: 3;
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.chose_demo_inner:before {
+  content: "";
+  background: #673ab7;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  z-index: -1;
+  height: 100%;
+}
+
+.chose_demo_inner:after {
+  content: "";
+  background: url(../img/dots.png) no-repeat center right;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+}
+
+.chose_demo_inner:first-child {
+  margin-top: 0px;
+}
+
+.chose_demo_inner:nth-child(2):before {
+  content: "";
+  background: #ed3851;
+  right: 0px;
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  z-index: -1;
+  height: 100%;
+  left: auto;
+}
+
+.chose_demo_inner:nth-child(2):after {
+  content: "";
+  background: url(../img/dots.png) no-repeat center left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.chose_demo_inner:nth-child(3):before {
+  content: "";
+  background: #008ed6;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  z-index: -1;
+  height: 100%;
+}
+
+.chose_demo_inner:nth-child(3):after {
+  content: "";
+  background: url(../img/dots.png) no-repeat center right;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.chose_demo_inner:nth-child(4) {
+  overflow: hidden;
+}
+
+.chose_demo_inner:nth-child(4):before {
+  content: "";
+  background: #15e99d;
+  right: 0px;
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  z-index: -1;
+  height: 100%;
+  left: auto;
+}
+
+.chose_demo_inner:nth-child(4):after {
+  content: "";
+  background: url(../img/dots.png) no-repeat center left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.chose_demo_inner:nth-child(6) {
+  overflow: hidden;
+}
+
+.chose_demo_inner:nth-child(6):before {
+  content: "";
+  background: #ed3851;
+  right: 0px;
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  z-index: -1;
+  height: 100%;
+  left: auto;
+}
+
+.chose_demo_inner:nth-child(6):after {
+  content: "";
+  background: url(../img/dots.png) no-repeat center left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.demo_item {
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+  position: relative;
+  z-index: 3;
+}
+
+.demo_item img {
+  max-width: 100%;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+  z-index: 3;
+}
+
+.demo_item h2 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #000;
+  padding-top: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.demo_item:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.white_border li {
+  position: absolute;
+}
+
+.white_border li:first-child {
+  top: -56px;
+  left: 90px;
+}
+
+.white_border li:nth-child(2) {
+  top: 0px;
+  left: 50px;
+}
+
+.white_border li:last-child {
+  top: 0px;
+  right: 90px;
+}
+
+.border_round {
+  position: relative;
+}
+
+.border_round li {
+  position: absolute;
+}
+
+.border_round li:first-child {
+  top: -56px;
+  left: 90px;
+}
+
+.border_round li:nth-child(2) {
+  top: 150px;
+  right: 60px;
+}
+
+.border_round li:nth-child(3) {
+  top: 150px;
+  right: 60px;
+}
+
+.border_round li:last-child {
+  top: 200px;
+  right: 480px;
+}
+
+/* End Demo item area css
+============================================================================================ */
+/* End Demo item area css
+============================================================================================ */
+.responsive_area {
+  position: relative;
+  height: 560px;
+  overflow: hidden;
+  z-index: 3;
+  margin-top: 100px;
+}
+
+.responsive_area:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.responsive_area .section-parallax li {
+  position: absolute;
+}
+
+.responsive_area .section-parallax li:first-child {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 90px;
+}
+
+.responsive_area .section-parallax li:nth-child(2) {
+  left: calc(50% - 240px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 400px;
+}
+
+.responsive_area .section-parallax li:nth-child(3) {
+  left: calc(50% - 100px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 200px;
+}
+
+.responsive_area .section-parallax li:nth-child(4) {
+  left: calc(50% + 200px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 380px;
+}
+
+.responsive_area .section-parallax li:nth-child(5) {
+  left: calc(50% + 20px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 450px;
+}
+
+.responsive_area .section-parallax li:nth-child(6) {
+  top: 50%;
+  right: 200px;
+}
+
+.responsive_area .section-parallax li:nth-child(7) {
+  top: 50%;
+  right: 200px;
+}
+
+.responsive_area .responsive_text {
+  text-align: center;
+  color: #fff;
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0px;
+}
+
+.responsive_area .responsive_text h3 {
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.responsive_area .responsive_text p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.responsive_area .responsive_text p span {
+  color: #673ab7;
+  font-weight: bold;
+}
+
+/* End Demo item area css
+============================================================================================ */
+/* Appsy Feature area css
+============================================================================================ */
+.appsy_feature_area {
+  padding: 100px 0px;
+}
+
+.appsy_feature_area .sec_title {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.feature_inner {
+  margin-bottom: -50px;
+  overflow: hidden;
+}
+
+.feature_item {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature_item i {
+  font-size: 50px;
+  color: #673ab7;
+}
+
+.feature_item h3 {
+  color: #673ab7;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  padding: 20px 0px 14px 0px;
+}
+
+.feature_item p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* End Appsy Feature area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Preloader area css
+============================================================================================ */
+.preloader {
+  text-align: center;
+}
+
+.preloader .left_pre {
+  background: rgba(0, 0, 0, 0.9);
+  width: 49.8%;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  height: 100%;
+  z-index: 9999;
+  -webkit-transition: all 400ms ease-in-out 0s;
+  -o-transition: all 400ms ease-in-out 0s;
+  transition: all 400ms ease-in-out 0s;
+}
+
+.preloader .right_pre {
+  background: rgba(0, 0, 0, 0.9);
+  width: 49.8%;
+  right: 0px;
+  top: 0px;
+  position: fixed;
+  height: 100%;
+  z-index: 9999;
+  -webkit-transition: all 400ms ease-in-out 0s;
+  -o-transition: all 400ms ease-in-out 0s;
+  transition: all 400ms ease-in-out 0s;
+}
+
+.preloader .content {
+  position: fixed;
+  z-index: 99999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  -webkit-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+}
+
+.preloader .content .circle {
+  width: 220px;
+  height: 220px;
+  background: rgba(186, 186, 186, 0.2);
+  padding: 16px;
+  border-radius: 100%;
+}
+
+.preloader .content .circle .red {
+  background: #ed3851;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.preloader .content .circle .red .rotator {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  -webkit-animation: rotation 4s linear infinite;
+  animation: rotation 4s linear infinite;
+}
+
+.preloader .content .circle .red .rotator img {
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  width: 95%;
+}
+
+.preloader .content .circle .red .logo {
+  position: absolute;
+  line-height: 50px;
+  font-size: 40px;
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.preloader.complete .left_pre {
+  left: -100%;
+}
+
+.preloader.complete .right_pre {
+  right: -100%;
+}
+
+.preloader.complete .content {
+  top: 200%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes mouseUpDown {
+  0% {
+    bottom: 151px;
+  }
+  25% {
+    bottom: 170px;
+  }
+  50% {
+    bottom: 151px;
+  }
+  75% {
+    bottom: 130px;
+  }
+  100% {
+    bottom: 151px;
+  }
+}
+
+@keyframes mouseUpDown {
+  0% {
+    bottom: 151px;
+  }
+  25% {
+    bottom: 170px;
+  }
+  50% {
+    bottom: 151px;
+  }
+  75% {
+    bottom: 130px;
+  }
+  100% {
+    bottom: 151px;
+  }
+}
+
+/* End Preloader area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Footer area css
+============================================================================================ */
+.footer_area {
+  background: #f7f7f7;
+  padding: 50px 0px;
+}
+
+.footer_area .f_inner_text {
+  text-align: center;
+}
+
+.footer_area .f_inner_text .by_btn {
+  width: 170px;
+  text-align: center;
+  margin: auto;
+  line-height: 40px;
+  color: #fff;
+  background: #6f9a37;
+  display: block;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+.footer_area .f_inner_text h2 {
+  color: #673ab7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+  padding-bottom: 7px;
+}
+
+.footer_area .f_inner_text h2 a {
+  color: #6f9a37;
+}
+
+.footer_area .f_inner_text .copyright {
+  color: #97989b;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* End Footer area css
+============================================================================================ */
+/*---------------------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */

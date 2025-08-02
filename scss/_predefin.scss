@@ -1,0 +1,50 @@
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration:none;
+    &:hover, &:focus{
+        text-decoration:none;
+        outline: none;
+        box-shadow: none;
+    }
+}
+.row.m0{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    line-height: 24px;
+    font-size: 14px;
+    overflow: auto;
+    font-family: $op;
+}
+
+body, p, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-sizer{
+    width: calc(100% / 3);
+}
+
+.display_table{
+    display: table;
+    width: 100%;
+}
+.display_table_row{
+    display: table-row;
+}
+.display_table_cell{
+    display: table-cell;
+    float: none !important;
+}
+/* Main title css
+============================================================================================ */
+
+/* End Pagination css
+============================================================================================ */

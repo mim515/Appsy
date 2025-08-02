@@ -1,0 +1,125 @@
+/* Mneu area css
+============================================================================================ */
+.header_area{
+    background: $baseColor;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    .main_menu{
+        float: none;
+        text-align: center;
+        li{
+            float: none;
+            display: inline-block;
+            margin-right: 35px;
+            a{
+                line-height: 50px;
+                color: #fff;
+                font-family: $mon;
+                font-size: 16px;
+                position: relative;
+                padding: 0px 8px;
+                background: transparent;
+//                &:before{
+//                    content: "";
+//                    width: 100%;
+//                    height: 1px;
+//                    background: $red;
+//                    position: absolute;
+//                    top: 50%;
+//                    left: 0px;
+//                    opacity: 0;
+//                    @include transition;
+//                    transform: scale(0);
+//                }
+                
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+            &:hover, &.active{
+                a{
+//                    &:before{
+//                        opacity: 1;
+//                        transform: scale(1);
+//                    }
+                }
+            }    
+        }
+    }    
+}
+/* End Mneu area css
+============================================================================================ */
+
+/* First Bg area css
+============================================================================================ */
+.firs_bg_area{
+    background: url(../img/header-bg.jpg) fixed no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    .template-info{
+        .logo{
+            img{
+                margin-top: 100px;
+            }
+        }
+        .page-headline{
+            h1{
+                font-family: $op;
+                font-size: 40px;
+                padding: 30px 0px;
+                span{
+                    color: $baseColor;
+                }
+            }
+            p{
+                padding-bottom: 30px;
+            }
+        }
+    }
+    .screens{
+        position: absolute;
+        width: 100%;
+        bottom: -60px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        span{
+            display: inline-block;
+        }
+    }
+    .memphis-parallax{
+        li{
+            position: absolute;
+            &:nth-child(1){
+                right: 200px;
+                bottom: 180px;
+                img{
+                    transform: rotate(-90deg);
+                }
+            }
+            &:nth-child(2){
+                right: 200px;
+                bottom: 180px;
+                img{
+                    transform: rotate(-90deg);
+                }
+            }
+            &:nth-child(3){
+                left: 200px;
+                bottom: 180px;
+                img{
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}
+/* End First Bg area css
+============================================================================================ */

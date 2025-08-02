@@ -1,0 +1,40 @@
+/* Footer area css
+============================================================================================ */
+.footer_area{
+    background: #f7f7f7;
+    padding: 50px 0px;
+    .f_inner_text{
+        text-align: center;
+        .by_btn{
+            width: 170px;
+            text-align: center;
+            margin: auto;
+            line-height: 40px;
+            color: #fff;
+            background: #6f9a37;
+            display: block;
+            border-radius: 20px;
+            font-size: 14px;
+            font-family: $op;
+            margin-bottom: 30px;
+        }
+        h2{
+            color: $baseColor;
+            font-family: $op;
+            font-size: 17px;
+            line-height: 28px;
+            font-weight: 400;
+            padding-bottom: 7px;
+            a{
+                color: #6f9a37;
+            }
+        }
+        .copyright{
+            color: #97989b;
+            font-size: 14px;
+            font-family: $op;
+        }
+    }
+}
+/* End Footer area css
+============================================================================================ */
