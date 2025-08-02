@@ -26,9 +26,7 @@ Check out the live demo here:
 - Bootstrap (for layout and components)  
 - Font Awesome (for icons)
 
-## 📸 Screenshots
 
-![Appsy Screenshot](https://mim515.github.io/Appsy/assets/img/screen.png)
 
 ## 📂 Folder Structure
 
