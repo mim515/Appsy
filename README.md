@@ -5,7 +5,7 @@ A modern, responsive landing page for promoting a mobile application. Designed w
 ## 🌐 Live Preview
 
 Check out the live demo here:  
-👉 [https://mim515.github.io/Appsy/](https://mim515.github.io/Appsy/)
+👉 [Click Here](https://mim515.github.io/Appsy/)
 
 ## 📌 Features
 
